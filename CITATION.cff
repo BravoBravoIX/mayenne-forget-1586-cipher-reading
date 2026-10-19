@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "BnF fr. 15573 f. 385 (Mayenne-Forget Cipher-2, 1586): a first reading of the whole letter"
+authors:
+  - family-names: Burford
+    given-names: Brett
+version: "0.2"
+doi: 10.5281/zenodo.23470961
+date-released: 2026-10-19
+repository-code: "https://github.com/BravoBravoIX/mayenne-forget-1586-cipher-reading"
