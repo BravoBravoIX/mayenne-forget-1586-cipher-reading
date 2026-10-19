@@ -1,7 +1,7 @@
 {
  "format": "polyphone-key/1",
  "target": "BnF fr. 15573 f. 385v",
- "key_revision": 5,
+ "key_revision": 6,
  "tokenisation": {
   "rule": "glyph-ids",
   "params": {}
@@ -534,27 +534,48 @@
      "conf": "sure",
      "note": "origin T (p, row 5)"
     },
+    "Qh": {
+     "v": "armee",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin F: 3 places (ff. 150r, 7v, 33r margins)"
+    },
+    "hb": {
+     "v": "tout",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin F: 2 places (f. 150r margin)"
+    },
+    "N": {
+     "v": "ee",
+     "type": "syllable",
+     "conf": "sure",
+     "note": "origin F: 2 places (f. 150r margin; f. 97r clear decipherment)"
+    },
+    "17": {
+     "v": "tant",
+     "type": "word",
+     "conf": "sure",
+     "note": "origin F: 2 places (f. 97r and f. 150r margins)"
+    },
+    "13": {
+     "v": "tre",
+     "type": "syllable",
+     "conf": "probable",
+     "note": "origin F?: 1 place (f. 32v margin, 'entreprendre')"
+    },
+    "ub": {
+     "v": "droit",
+     "type": "word",
+     "conf": "probable",
+     "note": "origin F?: 1 place (f. 33r margin, 'faudroit'); f. 97r fits"
+    },
     "14": {
      "v": null,
      "type": "unknown",
      "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
     },
     "15": {
-     "v": null,
-     "type": "unknown",
-     "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
-    },
-    "7": {
-     "v": null,
-     "type": "unknown",
-     "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
-    },
-    "Qh": {
-     "v": null,
-     "type": "unknown",
-     "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
-    },
-    "invT": {
      "v": null,
      "type": "unknown",
      "note": "sign with no value in the key (a code sign whose value is not known, or not on the sheet)"
@@ -580,7 +601,6 @@
      "i",
      "i",
      "s",
-     "i",
      "i",
      "i",
      "i",

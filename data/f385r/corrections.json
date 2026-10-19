@@ -1,7 +1,8 @@
 {
  "page": "BnF fr. 15573 f. 385r",
  "rule": [
-  "Round r1 (19 Oct 2026): changes chosen by both blind reader asks (seed 1 at 2.0x, seed 2 at 1.6x; never told values or words), then looked at by eye by Claude on the verify sheets. 'applied' = applied; 'rejected' = the image does not support it. 'decided_on_the_image' = a class decided on the image by Claude where no name on sheet v3 fits (a sign of Tomokiyo's table that the sheet lacked); each is listed with its table position. Lines are manuscript lines from 1."
+  "Round r1 (19 Oct 2026): changes chosen by both blind reader asks (seed 1 at 2.0x, seed 2 at 1.6x; never told values or words), then looked at by eye by Claude on the verify sheets. 'applied' = applied; 'rejected' = the image does not support it. 'decided_on_the_image' = a class decided on the image by Claude where no name on sheet v3 fits (a sign of Tomokiyo's table that the sheet lacked); each is listed with its table position. Lines are manuscript lines from 1.",
+  "Stage F (19 Oct 2026): class relabels on f. 385 decided on the image by Claude, after the other Cipher-2 letters of the volume showed two signs the reader had folded into sheet names: 'hb' (an h with one bar across its stem, = tout; read as Qh, whose own shape is an h under a crossed stem, = armee) and 'ub' (two uprights on a base, = droit; read as invT or tt). Neither is on sheet v3, so no blind ask could choose them (as the 'agent' rows of round r1). Each place was looked at on the straightened line. Rows: page, line (0-based, as reading.json), position, old, new, note."
  ],
  "positions": "line = manuscript line from 1; position = 0-based index in that line's list in reading.json",
  "applied": [
@@ -76,6 +77,34 @@
    "old": "+",
    "new": "Tl",
    "note": "same shape: 'ne reste [plus] icy que'"
+  },
+  {
+   "line": 5,
+   "position": 1,
+   "old": "Qh",
+   "new": "hb",
+   "note": "h with one bar at the top of the stem (the decoder had switched it to f2)"
+  },
+  {
+   "line": 6,
+   "position": 25,
+   "old": "Qh",
+   "new": "hb",
+   "note": "'[tout]s les iours'"
+  },
+  {
+   "line": 7,
+   "position": 3,
+   "old": "Qh",
+   "new": "hb",
+   "note": "'de [tout]s les mestres de camp'"
+  },
+  {
+   "line": 31,
+   "position": 22,
+   "old": "invT",
+   "new": "ub",
+   "note": "two uprights on a base; 'faict estat d'aler [droit] trouver'"
   }
  ],
  "rejected": [
@@ -119,9 +148,9 @@
    },
    {
     "line": 5,
-    "position_in_page": 128,
-    "voted": "Qh",
-    "chosen": "f2"
+    "position_in_page": 127,
+    "voted": "r",
+    "chosen": "2x"
    },
    {
     "line": 6,
@@ -248,12 +277,6 @@
     "position_in_page": 947,
     "voted": "4t",
     "chosen": "H"
-   },
-   {
-    "line": 31,
-    "position_in_page": 950,
-    "voted": "invT",
-    "chosen": "tt"
    },
    {
     "line": 32,

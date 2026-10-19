@@ -3,32 +3,32 @@
  "how": "the page decoded exactly as the reading (same key, same whole-page word decoder with the period French lexicon and data/lexicon-additions.tsv); sense_share = share of signs inside decoded dictionary words of 3 letters or more or a listed short word; bits_per_letter under a period French 5-gram model (lower = more like French); shuffled = the page's signs in random order, seeds 1-3; held_out_last_fifth = the last fifth of the page decoded on its own; without_target_prompted = the reading decoded without the 6 period spellings the target suggested",
  "reading": {
   "signs": 1054,
-  "sense_share": 0.9118,
-  "bits_per_letter": 3.238
+  "sense_share": 0.9213,
+  "bits_per_letter": 3.236
  },
  "shuffled_seed1": {
   "signs": 1054,
-  "sense_share": 0.6091,
-  "bits_per_letter": 5.453
+  "sense_share": 0.6214,
+  "bits_per_letter": 5.346
  },
  "shuffled_seed2": {
   "signs": 1054,
-  "sense_share": 0.6101,
-  "bits_per_letter": 5.326
+  "sense_share": 0.6186,
+  "bits_per_letter": 5.241
  },
  "shuffled_seed3": {
   "signs": 1054,
-  "sense_share": 0.6186,
-  "bits_per_letter": 5.328
+  "sense_share": 0.6243,
+  "bits_per_letter": 5.279
  },
  "held_out_last_fifth": {
   "signs": 210,
-  "sense_share": 0.9286,
-  "bits_per_letter": 3.337
+  "sense_share": 0.9333,
+  "bits_per_letter": 3.318
  },
  "without_target_prompted": {
   "signs": 1054,
-  "sense_share": 0.8994,
-  "bits_per_letter": 3.24
+  "sense_share": 0.9089,
+  "bits_per_letter": 3.237
  }
 }

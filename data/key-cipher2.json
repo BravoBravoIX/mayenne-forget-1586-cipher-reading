@@ -7,7 +7,9 @@
   "E": "aligned places in our reading of the calibration letter ff. 103v-104r against its contemporary decipherment",
   "E?": "as E, few places: doubtful",
   "E-eye": "seen by eye in the calibration letter against its decipherment",
-  "divider": "the slash is a word divider, not a letter"
+  "divider": "the slash is a word divider, not a letter",
+  "F": "aligned places in our reading (one pass, looked at by eye) of the other Cipher-2 letters of fr. 15573 with a decipherment of the time: ff. 7v, 32r-33r, 97r, 149r-150r",
+  "F?": "as F, one place or a weak alignment: doubtful"
  },
  "note": "Values are plaintext units; a list means any of them (a polyphone at our naming level); \"\" = null. Nothing here was taken from anyone's modern reading of f. 385.",
  "key": {
@@ -524,7 +526,43 @@
     "p"
    ],
    "origin": "T (p, row 5)"
+  },
+  "Qh": {
+   "values": [
+    "armee"
+   ],
+   "origin": "F: 3 places (ff. 150r, 7v, 33r margins)"
+  },
+  "hb": {
+   "values": [
+    "tout"
+   ],
+   "origin": "F: 2 places (f. 150r margin)"
+  },
+  "N": {
+   "values": [
+    "ee"
+   ],
+   "origin": "F: 2 places (f. 150r margin; f. 97r clear decipherment)"
+  },
+  "17": {
+   "values": [
+    "tant"
+   ],
+   "origin": "F: 2 places (f. 97r and f. 150r margins)"
+  },
+  "13": {
+   "values": [
+    "tre"
+   ],
+   "origin": "F?: 1 place (f. 32v margin, 'entreprendre')"
+  },
+  "ub": {
+   "values": [
+    "droit"
+   ],
+   "origin": "F?: 1 place (f. 33r margin, 'faudroit'); f. 97r fits"
   }
  },
- "revision": 5
+ "revision": 6
 }

@@ -26,7 +26,7 @@ The five readings of a line are aligned by edit distance, and the majority name 
 
 ## Step 5: corrections, only where the image supports them
 
-On every stretch the decoder could not read, two blind asks (the crop shown at 2.0x and at 1.6x, with candidate names; never told values or the word wanted) chose a name. Where both agreed on a change, Claude looked at it on the image and applied it only when the image shows that sign: 16 applied, 12 rejected. 5 places were decided on the image where no name on the sheet fits (signs of Tomokiyo's table missing from the sheet). The page decoder may also take another pass's name at any position for a fixed cost of 6 bits; each switch is listed. All of this is in `../data/<page>/corrections.json`.
+On every stretch the decoder could not read, two blind asks (the crop shown at 2.0x and at 1.6x, with candidate names; never told values or the word wanted) chose a name. Where both agreed on a change, Claude looked at it on the image and applied it only when the image shows that sign: 16 applied, 12 rejected. 13 places were decided on the image where no name on the sheet fits (signs of Tomokiyo's table missing from the sheet). The page decoder may also take another pass's name at any position for a fixed cost of 6 bits; each switch is listed. All of this is in `../data/<page>/corrections.json`.
 
 ## Step 6: from signs to letters
 
@@ -54,7 +54,11 @@ Cautions: the reference was made by the same model family, by eye; its independe
 
 ## Controls
 
-A decoder with a dictionary makes almost anything look a little like its language. So each page was also decoded with its signs shuffled into random order (seeds 1, 2, 3), with the same key, dictionary and decoder. The readings sit at 0.912–0.923 of signs read as French, the shuffled controls at 0.587–0.619. The last fifth of each page decoded on its own reads like the rest. The known-answer lines, read and decoded the same way with no corrections, score 0.868. Numbers per page: `../data/<page>/controls.json`.
+A decoder with a dictionary makes almost anything look a little like its language. So each page was also decoded with its signs shuffled into random order (seeds 1, 2, 3), with the same key, dictionary and decoder. The readings sit at 0.921–0.929 of signs read as French, the shuffled controls at 0.592–0.624. The last fifth of each page decoded on its own reads like the rest. The known-answer lines, read and decoded the same way with no corrections, score 0.868. Numbers per page: `../data/<page>/controls.json`.
+
+## Code signs from other letters (version 0.2)
+
+See [other-letters.md](other-letters.md): five other letters in this cipher, deciphered at the time, read with one pass and aligned by eye with their decipherments; the key values they give carry the origin `F` (or `F?` when doubtful).
 
 ## What this does not show
 
