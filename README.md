@@ -1,5 +1,7 @@
 # The Mayenne–Forget cipher letter of autumn 1586 (BnF fr. 15573 f. 385): a first reading of the whole letter
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23470961.svg)](https://doi.org/10.5281/zenodo.23470961)
+
 **BnF, Français 15573, f. 385r–v.** A letter of autumn 1586 written wholly in cipher, two pages, from the royal army in Guyenne. It uses the cipher that Satoshi Tomokiyo calls **Mayenne–Forget's Cipher-2**, the cipher of Charles de Lorraine, Duke of Mayenne, and of Forget de Fresnes, in their letters to King Henri III and to Villeroy.
 
 > **First reading of the whole letter, version 0.2 (19 October 2026), partial in places. Version 0.1 was prepared the same day; 0.2 adds code signs learnt from other letters in this cipher deciphered at the time.**
@@ -160,3 +162,7 @@ Prepared by Brett Burford, October 2026.
 - Text and data (everything except `decode/`, `method/score_heldout.py` and the image noted below): [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0).
 - `decode/` and `method/score_heldout.py`: [MIT licence](decode/LICENSE).
 - The image in `method/` (`sheet-v3.png`) is made of crops of BnF, Français 15573 (ff. 103v–104r and f. 385), from Gallica. It is not covered by CC BY: Gallica's terms allow free non-commercial reuse with the source line "Source gallica.bnf.fr / BnF"; commercial reuse needs the BnF's permission.
+
+## How to cite
+
+Burford, B. (2026). BnF fr. 15573 f. 385 (Mayenne-Forget Cipher-2, 1586): a first reading of the whole letter. Zenodo. https://doi.org/10.5281/zenodo.23470961 (this DOI always points to the latest version; each release has its own version DOI on Zenodo).
