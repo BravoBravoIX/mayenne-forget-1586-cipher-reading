@@ -1,0 +1,55 @@
+# BnF fr. 15573 f. 104r cipher lines 0-25 (Mayenne to Henri III, Sept. 1586; Mayenne-Forget
+# Cipher-2): contemporary decipherment, read by eye by Claude, 19 Oct 2026, from views
+# 212 (f. 103v foot, lines written full width under the cipher) and 213 (f. 104r left margin and
+# foot). One row per manuscript line of the decipherment. [..] = an abbreviation expanded;
+# [?] = doubtful; words struck out by the decipherer are left out. Source gallica.bnf.fr / BnF.
+# f. 103v foot (continues f103v-decipherment.txt):
+que ayant acheué l'aduitaillement de Brouage, il
+faict estat de se retirer en sa maison, ce faisant amener luy
+mesmes iusques pres d'eux les forces qui leur restent
+qu'il dit estre douze ou quinze cens hommes de pied, Cent cinq[uan]te chevaulx legers
+# f. 104r left margin:
+et sa compagnie,
+et m'aduertist de
+bonne heure que si
+a leur arriuee ilz
+ne sont payez
+qu'ilz ne demeureront
+point. V[ost]re ma[jes]té
+scait comme moy
+mesmes le moyen
+que i'en ay, et
+m'asseure qu'en
+ayant aussi que
+i'estime esté desia
+aduertie par ced[it]
+s[ieu]r de Biron quelle
+pourueoira a cela
+auec le reste de la
+despesche du s[ieu]r de Sessenal.
+Ceux de la prouince
+de Xaintonge m'ont
+faict fere une
+proposition que
+ie croy qu'ilz auront
+premierement faicte
+a v[ost]re ma[jes]té, qui est
+d'assieger Pons,
+qu'ilz estiment se
+pouuoir maintenant
+aysement emporter
+pour plusieurs
+bonnes raisons. Mays
+ie y faictz deux
+principalles difficultez,
+l'une que y menant
+ce peu de forces
+qui reste icy,
+la Guienne en
+demoureroit du
+tout desgarnie,
+l'aultre que y estantz
+# f. 104r foot (decipherer's lines under the cipher):
+campez, se resoluant la tresue dont il se parle pour
+les prouinces de Xaintonge et Poitou, qu'il en fallust leuer le siege qui seroit
+beaucoup de temps, de peine et de despense perdue. I'attends

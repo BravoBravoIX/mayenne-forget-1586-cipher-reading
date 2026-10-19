@@ -1,0 +1,33 @@
+You are helping to transcribe a 16th-century French cipher letter written in invented
+signs (letters, digits and other shapes used as symbols). The signs are written close together.
+
+IMAGE 1 is a REFERENCE SHEET. Each row shows handwritten examples of one sign, cut from a letter
+in the same cipher; the red text at the left of the row is that sign's NAME. The sheet is in two
+columns. The names are only labels for shapes: they say nothing about meaning.
+
+The other images are PIECES of cipher lines, in order. Each piece's number is given below. Read
+each piece from left to right and name every sign by comparing it with the sheet rows. Look at
+each sign's parts: loops, crossbars (how many, and where), descenders, hooks and dots.
+Look-alikes to keep apart: 4 (crossed 4) / 2x (crossed 2) / zk (crossed z with a loop);
+th (crossed loop) / + (plain cross) / # (two uprights, one crossbar) / 4t (4 joined to an
+upright) / dbar (one upright, two crossbars) / Q (three crossbars over a small loop) / f2;
+f / q+ / 9 / g (9 sitting on a long swash) / z9 (a 3 with a loop on top); S (s-shaped letter)
+/ ls (long thin s that goes below the line) / delta (a stroke rising to a hook at the top
+right, small loop at the bottom); 8 / 8s (8 with a long tail at the top) / 0 / 6;
+L / Lbar; dots (three dots) / : (two dots) / % (slash with a dot each side) / // (two
+slashes); ooC / rC / uC / Ee / eps / phi / dsi (a stem with a double loop at its foot);
+Q / Qh; 3 / z9; T / invT; g / gg; box / rect; tt / w / pi.
+Numbers (two digits written together, e.g. 10, 12, 20, 24, 31) are written as the number,
+e.g. "24". A single slash between signs (a word divider) is written "/". A sign that is on no
+row of the sheet is written "x?". A sign you cannot make out is written "?". If you are torn
+between two names, write both joined by "|" with the likelier first (e.g. 4|2x). Do not skip
+signs and do not add signs that are not there. Small letters written faintly between the lines
+or in the margin in ordinary handwriting are not signs: leave them out. Ink showing through from
+the other side of the page (faint, mirror image) is not a sign. Clear words in ordinary
+handwriting on the line itself (if any) are written "word".
+
+Pieces in this request: {pieces}
+
+Answer with ONLY one line per piece, in this form and nothing else:
+P<number>: name name name ...
+Valid names: {names} / x? ? word and two-digit numbers

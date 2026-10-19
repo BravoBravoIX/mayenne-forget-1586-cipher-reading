@@ -1,0 +1,289 @@
+{
+ "page": "BnF fr. 15573 f. 385v",
+ "rule": [
+  "Round r1 (19 Oct 2026): changes chosen by both blind reader asks (seed 1 at 2.0x, seed 2 at 1.6x; never told values or words), then looked at by eye by Claude on the verify sheets. 'applied' = applied; 'rejected' = the image does not support it. 'decided_on_the_image' = a class decided on the image by Claude where no name on sheet v3 fits (a sign of Tomokiyo's table that the sheet lacked); each is listed with its table position. Lines are manuscript lines from 1."
+ ],
+ "positions": "line = manuscript line from 1; position = 0-based index in that line's list in reading.json",
+ "applied": [
+  {
+   "line": 3,
+   "position": 18,
+   "old": "8",
+   "new": "z9",
+   "note": ""
+  },
+  {
+   "line": 7,
+   "position": 12,
+   "old": "8",
+   "new": "S",
+   "note": ""
+  },
+  {
+   "line": 9,
+   "position": 25,
+   "old": "8s",
+   "new": "x?",
+   "note": "an 8 with a long looped stem: on no row"
+  },
+  {
+   "line": 13,
+   "position": 29,
+   "old": "lambda",
+   "new": "delta",
+   "note": ""
+  },
+  {
+   "line": 13,
+   "position": 30,
+   "old": "bar",
+   "new": "/",
+   "note": "a stroke at the line end"
+  },
+  {
+   "line": 23,
+   "position": 10,
+   "old": "eps",
+   "new": "x?",
+   "note": "the E code sign (as f. 385r l. 3)"
+  },
+  {
+   "line": 28,
+   "position": 17,
+   "old": "4",
+   "new": "2x",
+   "note": "same value (a)"
+  },
+  {
+   "line": 34,
+   "position": 18,
+   "old": "Q",
+   "new": "Qh",
+   "note": "the loop at the foot is h-shaped"
+  }
+ ],
+ "decided_on_the_image": [
+  {
+   "line": 11,
+   "position": 24,
+   "old": ":",
+   "new": "ud",
+   "note": "a curl with a dot under it: Tomokiyo's u (row 4); both asks chose x?"
+  },
+  {
+   "line": 27,
+   "position": 9,
+   "old": "dbar",
+   "new": "pdots",
+   "note": "a cross with four dots: Tomokiyo's p (row 5); both asks chose #"
+  },
+  {
+   "line": 31,
+   "position": 27,
+   "old": "dbar",
+   "new": "pdots",
+   "note": "same shape"
+  }
+ ],
+ "rejected": [
+  {
+   "line": 1,
+   "position": 4,
+   "old": "8s",
+   "new": "8",
+   "note": "tail at the top"
+  },
+  {
+   "line": 3,
+   "position": 12,
+   "old": "ls",
+   "new": "-",
+   "note": "the sign is there"
+  },
+  {
+   "line": 8,
+   "position": 7,
+   "old": "r",
+   "new": "invT",
+   "note": "an r on a long base"
+  },
+  {
+   "line": 16,
+   "position": 2,
+   "old": "zk",
+   "new": "x?",
+   "note": "zk"
+  },
+  {
+   "line": 26,
+   "position": 20,
+   "old": "r",
+   "new": "invT",
+   "note": "an r on a long base"
+  },
+  {
+   "line": 31,
+   "position": 12,
+   "old": "a",
+   "new": "0",
+   "note": "unclear; left"
+  },
+  {
+   "line": 31,
+   "position": 24,
+   "old": "a",
+   "new": "0",
+   "note": "unclear; left"
+  },
+  {
+   "line": 31,
+   "position": 28,
+   "old": "S",
+   "new": "5",
+   "note": "not a 5"
+  }
+ ],
+ "decoder_switches": {
+  "rule": "after the vote, the page decoder may take another pass's name at a position for a fixed cost of 6 bits when that makes better French; every such switch is listed (position_in_page = 0-based index over the page's signs in signs.txt, slashes not counted)",
+  "switches": [
+   {
+    "line": 3,
+    "position_in_page": 87,
+    "voted": "th",
+    "chosen": "f"
+   },
+   {
+    "line": 8,
+    "position_in_page": 236,
+    "voted": "alpha",
+    "chosen": "0"
+   },
+   {
+    "line": 10,
+    "position_in_page": 282,
+    "voted": "a",
+    "chosen": "f"
+   },
+   {
+    "line": 11,
+    "position_in_page": 316,
+    "voted": "f",
+    "chosen": "f2"
+   },
+   {
+    "line": 14,
+    "position_in_page": 408,
+    "voted": "S",
+    "chosen": "ls"
+   },
+   {
+    "line": 15,
+    "position_in_page": 443,
+    "voted": "zk",
+    "chosen": "2u"
+   },
+   {
+    "line": 18,
+    "position_in_page": 517,
+    "voted": "2o",
+    "chosen": "a"
+   },
+   {
+    "line": 18,
+    "position_in_page": 524,
+    "voted": "S",
+    "chosen": "ls"
+   },
+   {
+    "line": 20,
+    "position_in_page": 588,
+    "voted": "S",
+    "chosen": "ls"
+   },
+   {
+    "line": 24,
+    "position_in_page": 677,
+    "voted": "Qh",
+    "chosen": "f"
+   },
+   {
+    "line": 25,
+    "position_in_page": 705,
+    "voted": "xo",
+    "chosen": "2x"
+   },
+   {
+    "line": 25,
+    "position_in_page": 732,
+    "voted": "f2",
+    "chosen": "f"
+   },
+   {
+    "line": 26,
+    "position_in_page": 754,
+    "voted": "r",
+    "chosen": "L"
+   },
+   {
+    "line": 26,
+    "position_in_page": 759,
+    "voted": "2u",
+    "chosen": "zk"
+   },
+   {
+    "line": 28,
+    "position_in_page": 793,
+    "voted": "Qh",
+    "chosen": "Q"
+   },
+   {
+    "line": 28,
+    "position_in_page": 801,
+    "voted": "th",
+    "chosen": "+"
+   },
+   {
+    "line": 30,
+    "position_in_page": 876,
+    "voted": "f2",
+    "chosen": "f"
+   },
+   {
+    "line": 31,
+    "position_in_page": 882,
+    "voted": "f2",
+    "chosen": "f"
+   },
+   {
+    "line": 31,
+    "position_in_page": 889,
+    "voted": "a",
+    "chosen": "0"
+   },
+   {
+    "line": 31,
+    "position_in_page": 901,
+    "voted": "a",
+    "chosen": "0"
+   },
+   {
+    "line": 32,
+    "position_in_page": 908,
+    "voted": "6",
+    "chosen": "Lbar"
+   },
+   {
+    "line": 34,
+    "position_in_page": 988,
+    "voted": "rect",
+    "chosen": "Id"
+   },
+   {
+    "line": 34,
+    "position_in_page": 996,
+    "voted": "%",
+    "chosen": "dots"
+   }
+  ]
+ }
+}

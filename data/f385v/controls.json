@@ -1,0 +1,34 @@
+{
+ "page": "BnF fr. 15573 f. 385v",
+ "how": "the page decoded exactly as the reading (same key, same whole-page word decoder with the period French lexicon and data/lexicon-additions.tsv); sense_share = share of signs inside decoded dictionary words of 3 letters or more or a listed short word; bits_per_letter under a period French 5-gram model (lower = more like French); shuffled = the page's signs in random order, seeds 1-3; held_out_last_fifth = the last fifth of the page decoded on its own; without_target_prompted = the reading decoded without the 6 period spellings the target suggested",
+ "reading": {
+  "signs": 998,
+  "sense_share": 0.9228,
+  "bits_per_letter": 3.195
+ },
+ "shuffled_seed1": {
+  "signs": 998,
+  "sense_share": 0.6172,
+  "bits_per_letter": 5.452
+ },
+ "shuffled_seed2": {
+  "signs": 998,
+  "sense_share": 0.6112,
+  "bits_per_letter": 5.572
+ },
+ "shuffled_seed3": {
+  "signs": 998,
+  "sense_share": 0.5872,
+  "bits_per_letter": 5.587
+ },
+ "held_out_last_fifth": {
+  "signs": 199,
+  "sense_share": 0.8894,
+  "bits_per_letter": 3.324
+ },
+ "without_target_prompted": {
+  "signs": 998,
+  "sense_share": 0.9198,
+  "bits_per_letter": 3.195
+ }
+}
