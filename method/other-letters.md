@@ -6,8 +6,8 @@
 
 - Cipher blocks segmented, then **one reader pass** (Claude Opus 5.5, sheet v3, the settings of pass a). Lines in clear inside the boxes are read as `word`.
 - Decoded with key rev 5 untouched. The key reads these letters as French before any change, a check of the key on letters it was never fitted on: "ce sera le plus certain moyen", "je preuoy … pendant lequel … considerera", "Monsieur de la Barge lequel ayant eu nouvelles que sa femme et sa fille sont frapp… de la contagion".
-- Every place where a sign without a value occurs was listed, looked at on the straightened line, and aligned by eye with the decipherment of the time: the margin text (ff. 7v, 32v, 33r, 150r), interlinear words (f. 32v l. 13: "aduantage" written over the cipher) or the clear text that follows the cipher (f. 97r).
-- The decipherments were read by eye by Claude; they are cursive and often paraphrase, so only places where the word slot is unambiguous count.
+- Every place where a sign without a value occurs was listed, looked at on the straightened line, and aligned with the decipherment of the time by Claude: the margin text (ff. 7v, 32v, 33r, 150r), interlinear words (f. 32v l. 13: "aduantage" written over the cipher) or the clear text that follows the cipher (f. 97r).
+- The decipherments were read from the image by Claude; they are cursive and often paraphrase, so only places where the word slot is unambiguous count.
 - Line numbers are those of the pass, counted from 0 (`s150r l4` = f. 150r, line 4 of the pass).
 
 ## Aligned values (key revision 6, `data/key-cipher2.json`)
@@ -35,4 +35,4 @@
 
 ## Relabels on f. 385 (`data/<page>/corrections.json` (`decided_on_the_image`), decided on the image)
 
-The sheet has no row for `hb` or `ub`, so no blind ask could choose them (as round r1's "agent" rows). Qh → hb at f. 385r l. 5, 6, 7 and f. 385v l. 17, 18, 24; invT → ub at f. 385r l. 31 and f. 385v l. 9 (manuscript lines from 1). The Qh places left as Qh show the crossed stem (f. 385r l. 5, 20, 22, 26; f. 385v l. 7).
+The sheet has no row for `hb` or `ub`, so no blind ask could choose them (like the places Claude decided on the image in round r1). Qh → hb at f. 385r l. 5, 6, 7 and f. 385v l. 17, 18, 24; invT → ub at f. 385r l. 31 and f. 385v l. 9 (manuscript lines from 1). The Qh places left as Qh show the crossed stem (f. 385r l. 5, 20, 22, 26; f. 385v l. 7).

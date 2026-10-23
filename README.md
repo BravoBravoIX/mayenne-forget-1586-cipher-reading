@@ -4,7 +4,7 @@
 
 **BnF, Français 15573, f. 385r–v.** A letter of autumn 1586 written wholly in cipher, two pages, from the royal army in Guyenne. It uses the cipher that Satoshi Tomokiyo calls **Mayenne–Forget's Cipher-2**, the cipher of Charles de Lorraine, Duke of Mayenne, and of Forget de Fresnes, in their letters to King Henri III and to Villeroy.
 
-> **First reading of the whole letter, version 0.2 (19 October 2026), partial in places. Version 0.1 was prepared the same day; 0.2 adds code signs learnt from other letters in this cipher deciphered at the time.**
+> **First reading of the whole letter, version 0.2.1 (21 October 2026), partial in places. Version 0.1 was prepared on 19 October 2026; 0.2, the same day, adds code signs learnt from other letters in this cipher deciphered at the time; 0.2.1 is a documentation update of 0.2, with the same reading.**
 >
 > **Satoshi Tomokiyo published a fragment of the opening lines earlier**, on his page of Henri III's ciphers, and credits George Lasry with finding that this letter uses Cipher-2: <https://cryptiana.web.fc2.com/code/henryiii.htm>. His fragment reads "demain ou apresdemain et ratrape … Mons. d'Halincourt jusques … sinon qu'il le laissera advancer d'une journ… qu'il ne reste pas mil ho m es de pied qui diminue …". **Our reading of the opening agrees with it** (*… partira demain ou apres … ratrapera monsieur d'Halincourt iusques … sinon qu'il le laissera aduancer d'une iournée … de sorte qu'il ne reste pas [mil] ho[m]mes de pied qui diminuent …*), and it was made without using his text.
 >
@@ -45,7 +45,7 @@ Open: 89 listed items, of which 12 are code signs whose value is not known, 41 a
 | [reading/](reading/) | The French text of each page (Literal = exactly what the key gives; Normalised = the same letters with word breaks made by code), an English gist of the readable stretches, and the list of unresolved stretches |
 | [data/](data/) | Per page: the signs as read (`signs.txt`, one manuscript line per row; `reading.json` with the votes for every sign), the key with the value chosen at every occurrence of a two-valued sign (`key.json`), the literal plaintext, corrections and controls. `key-cipher2.json` is the key with the origin of every value; `lexicon-additions.tsv` the words added to the dictionary, each with its source. `known-text/` holds the calibration material |
 | [decode/](decode/) | `decode.py`, a short stand-alone script (Python 3 standard library) that applies `key.json` to `signs.txt`, and `check.sh`, which reproduces both pages byte for byte |
-| [method/](method/) | How the signs were read (the prompt given to Claude, the reference sheet of signs), the vote, the corrections, the key, the controls and the measurement on known text |
+| [method/](method/) | How the signs were read (the reference sheet of signs), the vote, the corrections, the key, the controls and the measurement on known text |
 | [PRIOR-ART.md](PRIOR-ART.md) | The prior-art search: what was searched, where, and every query with its result count |
 | [NUMBERS.md](NUMBERS.md) | Where every number in this README comes from |
 
@@ -62,7 +62,7 @@ The page images are not copied here. The reference sheet in `method/` is made of
 
 ## The key
 
-The key is **Satoshi Tomokiyo's reconstruction** of Mayenne–Forget's Cipher-2, published on his page of Henri III's ciphers (<https://cryptiana.web.fc2.com/code/henryiii.htm>). We do not reproduce his key image; please see it on his page. We mapped his drawn signs to our visual names and checked the values against the decipherment of the time of the calibration letter: our reading of ff. 103v–104r was aligned by code with the decipherment, and a few values his table does not give were taken from that alignment. Every value in [data/key-cipher2.json](data/key-cipher2.json) carries its origin: `T` (Tomokiyo's table), `T?` (his table, our mapping of his sign uncertain), `E` (the alignment with the 1586 decipherment), `E-eye` (seen by eye in the calibration letter against its decipherment), `E?` (few places: doubtful), `F` (aligned places in the other letters in this cipher deciphered at the time, see [method/other-letters.md](method/other-letters.md)), `F?` (one place or a weak alignment: doubtful).
+The key is **Satoshi Tomokiyo's reconstruction** of Mayenne–Forget's Cipher-2, published on his page of Henri III's ciphers (<https://cryptiana.web.fc2.com/code/henryiii.htm>). We do not reproduce his key image; please see it on his page. We mapped his drawn signs to our visual names and checked the values against the decipherment of the time of the calibration letter: our reading of ff. 103v–104r was aligned by code with the decipherment, and a few values his table does not give were taken from that alignment. Every value in [data/key-cipher2.json](data/key-cipher2.json) carries its origin: `T` (Tomokiyo's table), `T?` (his table, our mapping of his sign uncertain), `E` (the alignment with the 1586 decipherment), `E-eye` (seen on the image of the calibration letter against its decipherment by Claude; the label is kept as it stands in the data), `E?` (few places: doubtful), `F` (aligned places in the other letters in this cipher deciphered at the time, see [method/other-letters.md](method/other-letters.md)), `F?` (one place or a weak alignment: doubtful).
 
 - Most signs stand for one letter; several signs share a letter (homophones).
 - Some signs stand for a group of letters or a short word: for example *de*, *la*, *que*, *qui*, *est*, *et*, *pour*, *plus*, *monsieur*, and figures such as 23 = *apres*, 24 = *peu*, 31 = *pas*.
@@ -72,7 +72,7 @@ The key is **Satoshi Tomokiyo's reconstruction** of Mayenne–Forget's Cipher-2,
 
 ## The method in plain words
 
-1. **A letter with a known answer.** ff. 103v–104r are in the same cipher, from the same camp, in the same volume, and their decipherment made at the time survives. We read that decipherment by eye.
+1. **A letter with a known answer.** ff. 103v–104r are in the same cipher, from the same camp, in the same volume, and their decipherment made at the time survives. Claude read that decipherment from the image.
 2. **A reference sheet.** From the calibration pages and the target pages we cut a sheet of 74 sign shapes, named by their look only (the names say nothing about meaning). No example comes from the held-out lines.
 3. **Claude reads the signs.** Each line was cut into pieces, and the pieces were shown to Claude (Anthropic, model Opus 5.5) under the reference sheet, with the instruction to name every sign from left to right. This was done five times with different cuts and magnifications.
 4. **Vote.** The five readings of each line were aligned and the majority name taken at each place.
@@ -80,15 +80,17 @@ The key is **Satoshi Tomokiyo's reconstruction** of Mayenne–Forget's Cipher-2,
 6. **Key applied mechanically.** The key turns each sign into its value; for the two-valued signs the choice made by the word decoder is recorded. From then on the decode is a lookup that anyone can repeat with `decode/decode.py`.
 7. **Word breaks by code** from a period French dictionary, for the Normalised text only. No letter is changed.
 8. **Controls.** Every page was also decoded with its signs shuffled into a random order, in exactly the same way. The last fifth of each page was also decoded on its own. The known-answer lines were decoded the same way as a yardstick.
-9. **Code signs from other letters (version 0.2).** Five other letters in this cipher in the same volume carry a decipherment of the time (ff. 7v–8r, 32r–33r, 97r, 149r–150r). Their cipher was read with one reader pass and decoded with the key unchanged (it reads them as French); every place of a sign without a value was looked at on the image and aligned by eye with the decipherment. Two signs the reader had folded into one name were told apart on the image and given new names (`hb`, `ub`). See [method/other-letters.md](method/other-letters.md).
+9. **Code signs from other letters (version 0.2).** Five other letters in this cipher in the same volume carry a decipherment of the time (ff. 7v–8r, 32r–33r, 97r, 149r–150r). Their cipher was read with one reader pass and decoded with the key unchanged (it reads them as French); every place of a sign without a value was looked at on the image and aligned with the decipherment by Claude. Two signs the reader had folded into one name were told apart on the image and given new names (`hb`, `ub`). See [method/other-letters.md](method/other-letters.md).
 
 Details are in [method/README.md](method/README.md).
 
+**How AI was used.** The cipher signs were read from the page images by Claude (Anthropic, model Opus 5.5) in five passes, combined by vote; the five other deciphered letters of version 0.2 were read in one pass. On a page whose answer is known (f. 104r, 168 signs), the vote of three passes reads 92.9 % of the signs correctly. Claude also read the decipherments of the time used for calibration and for the other letters, aligned them with the cipher, read the reference signs, and checked each correction against the image. The English gist is a translation by Claude, kept separate from the literal French. An AI coding assistant (Claude Code) was used. The decoding and the known-text measurement rerun without any AI service; Claude's readings are stored as data.
+
 ## Measured numbers
 
-**Reader calibrated on known text.** The reader was measured on f. 104r, cipher lines 18–24 (168 signs), held out from everything else. Nothing in the sheet or the key was tuned on these lines. The reference signs were read by eye and checked by decoding against the decipherment of the time.
+**Reader calibrated on known text.** The reader was measured on f. 104r, cipher lines 18–24 (168 signs), held out from everything else. Nothing in the sheet or the key was tuned on these lines. The reference signs were read from the image by Claude, separately from the reader passes, and checked by decoding against the decipherment of the time.
 
-| reader | sign accuracy (either name accepted where the eye cannot choose) |
+| reader | sign accuracy (either name accepted where the image does not decide) |
 |---|---|
 | pass a / b / c | 0.9167 / 0.9345 / 0.9107 |
 | **vote of the three passes** | **0.929** (0.917 strict, counting only the first accepted name) |
@@ -109,9 +111,9 @@ The readings sit at 0.921–0.929; the shuffled controls at 0.592–0.624. The l
 - **Code signs not identified**: `14`, `15`, `30`, `invT`, `x?`. Context conjectures for `Qh` (*armée*) and `invT` (*vostre majesté*) are not in the key.
 - **Doubtful words**: abbreviations the decipherers of the time wrote out (*p[rése]nt*, *m[oye]n*, *d[eu]x*, *c[eu]x*), names, and period spellings. Each is listed with its evidence.
 - **Short stretches not yet read**: misread signs, mostly. Stretches that match no dictionary word are shown in [brackets] in the Normalised text.
-- **No palaeographer has checked it.** The English gist is Claude's, from our Normalised French; it is not literal plaintext.
+- **It awaits a palaeographer's reading.** The English gist is a translation by Claude, from our Normalised French; it is not literal plaintext.
 
-This is version 0.2. **Updates will follow**: a second image-checked correction round on the stretches not yet read, and more passes over the other deciphered letters for the doubtful values.
+This is version 0.2.1, a documentation update of version 0.2 (the reading is unchanged). **Updates will follow**: a second image-checked correction round on the stretches not yet read, and more passes over the other deciphered letters for the doubtful values.
 
 ## Prior art
 
@@ -153,7 +155,7 @@ What cannot be repeated from this repository alone: Claude's sign readings thems
 - **Satoshi Tomokiyo**, for the reconstruction of Mayenne–Forget's Cipher-2, the catalogue of these letters, and the first published fragment of this letter (<https://cryptiana.web.fc2.com/code/henryiii.htm>).
 - **George Lasry**, credited by Tomokiyo with finding that this letter uses Cipher-2 and with the opening fragment.
 - **Bibliothèque nationale de France / Gallica**, for the manuscript images. Source gallica.bnf.fr / BnF.
-- **Anthropic's Claude** (model Opus 5.5) was used as the sign reader, for the blind correction asks, for reading the calibration decipherment and the reference lines by eye, and for the English gist.
+- **Anthropic's Claude** read the signs and gave the blind correction answers (model Opus 5.5, through Anthropic's API), and read the calibration decipherment and the reference lines, checked the corrections on the image and wrote the English gist (see "How AI was used").
 
 Prepared by Brett Burford, October 2026.
 

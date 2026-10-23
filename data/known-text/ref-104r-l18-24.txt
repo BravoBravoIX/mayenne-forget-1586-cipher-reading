@@ -1,7 +1,7 @@
 # Reference sign transcription of BnF fr. 15573 f. 104r cipher lines 18-24 (held-out lines of the
 # calibration letter; no sheet example comes from lines 18 onward), names of sheet v3
-# (x? = a sign on no row; / = word divider). Read by eye by Claude at about 0.85x native
-# size, sign by sign, 19 Oct 2026, before any reader pass with sheet v2/v3 was made on these lines.
+# (x? = a sign on no row; / = word divider). Read by
+# Claude at about 0.85x native size, sign by sign, 19 Oct 2026, before any reader pass with sheet v2/v3 was made on these lines.
 # Checked by decoding against the contemporary decipherment (f. 104r margin and foot: "...deux
 # principalles difficultez, l'une que y menant ce peu de forces qui reste icy, la Guienne en
 # demoureroit du tout desgarnie, l'aultre que y estantz campez, se resoluant la tresue dont il se

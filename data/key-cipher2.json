@@ -6,9 +6,9 @@
   "T?": "Tomokiyo's table, but our mapping of his drawn sign to our name is uncertain",
   "E": "aligned places in our reading of the calibration letter ff. 103v-104r against its contemporary decipherment",
   "E?": "as E, few places: doubtful",
-  "E-eye": "seen by eye in the calibration letter against its decipherment",
+  "E-eye": "seen on the image of the calibration letter against its decipherment by Claude",
   "divider": "the slash is a word divider, not a letter",
-  "F": "aligned places in our reading (one pass, looked at by eye) of the other Cipher-2 letters of fr. 15573 with a decipherment of the time: ff. 7v, 32r-33r, 97r, 149r-150r",
+  "F": "aligned places in our reading (one pass, checked by Claude) of the other Cipher-2 letters of fr. 15573 with a decipherment of the time: ff. 7v, 32r-33r, 97r, 149r-150r",
   "F?": "as F, one place or a weak alignment: doubtful"
  },
  "note": "Values are plaintext units; a list means any of them (a polyphone at our naming level); \"\" = null. Nothing here was taken from anyone's modern reading of f. 385.",

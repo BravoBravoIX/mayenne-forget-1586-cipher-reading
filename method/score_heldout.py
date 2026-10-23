@@ -6,8 +6,8 @@
 
 Python 3 standard library only. Per line, the signs read (first name of each position) are
 aligned with the reference by edit distance; a reference sign counts as right when the sign
-aligned to it is one of the names accepted there (the reference gives "a|b" where the eye
-cannot choose). Accuracy = reference signs read right / reference signs.
+aligned to it is one of the names accepted there (the reference gives "a|b" where the image
+does not decide). Accuracy = reference signs read right / reference signs.
 """
 import json
 import sys

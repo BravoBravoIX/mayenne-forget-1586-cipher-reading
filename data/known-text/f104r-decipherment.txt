@@ -1,5 +1,6 @@
 # BnF fr. 15573 f. 104r cipher lines 0-25 (Mayenne to Henri III, Sept. 1586; Mayenne-Forget
-# Cipher-2): contemporary decipherment, read by eye by Claude, 19 Oct 2026, from views
+# Cipher-2): contemporary decipherment, read by
+# Claude, 19 Oct 2026, from views
 # 212 (f. 103v foot, lines written full width under the cipher) and 213 (f. 104r left margin and
 # foot). One row per manuscript line of the decipherment. [..] = an abbreviation expanded;
 # [?] = doubtful; words struck out by the decipherer are left out. Source gallica.bnf.fr / BnF.

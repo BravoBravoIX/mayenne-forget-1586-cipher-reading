@@ -1,6 +1,7 @@
 # BnF fr. 15573 f. 103v, left margin: contemporary decipherment (neat hand) of cipher lines 1-16 of
 # the same page (Mayenne to Henri III, camp of Libourne, Sept. 1586; Mayenne-Forget Cipher-2).
-# Read by eye by Claude, 19 Oct 2026, from view 212 (BnF IIIF, full size). One margin
+# Read by Claude,
+# 19 Oct 2026, from view 212 (BnF IIIF, full size). One margin
 # line per row. [..] = an abbreviation expanded; [?] = doubtful. Source gallica.bnf.fr / BnF.
 Nous eussions
 bien desiré de

@@ -12,8 +12,8 @@ Per page (`f385r` = f. 385 recto, `f385v` = f. 385 verso):
 | `corrections.json` | the rule for corrections; the changes applied, decided on the image, and rejected (line from 1, 0-based position in `reading.json`); the decoder's switches to another pass's name |
 | `controls.json` | the page decoded as read, with its signs shuffled (seeds 1-3), its last fifth on its own, and without the target-prompted words: share read as French and bits per letter |
 
-`key-cipher2.json`: the key with the origin of every value (`T` Tomokiyo's table, `T?` our mapping of his sign uncertain, `E` alignment with the 1586 decipherment, `E-eye` seen by eye, `E?` doubtful).
+`key-cipher2.json`: the key with the origin of every value (`T` Tomokiyo's table, `T?` our mapping of his sign uncertain, `E` alignment with the 1586 decipherment, `E-eye` seen on the image by Claude, `E?` doubtful).
 
 `lexicon-additions.tsv`: words added to the period French dictionary for this letter, each with its source (`dec103v`/`dec104r` = the calibration decipherment; `m1586-*` = names, places and period words of the 1586 Guyenne campaign; `period-target-prompted` = period spellings added after the target suggested them, reported separately). They apply to the controls and the yardstick too.
 
-`known-text/`: the calibration material. `f103v-decipherment.txt`, `f104r-decipherment.txt` are our readings by eye of the decipherment made at the time (fr. 15573 ff. 103v–104r); `ref-104r-l18-24.txt` the reference signs of the held-out lines; `stageB/` the three passes and the vote on f. 104r lines 18–24; `scores/` the recorded scores.
+`known-text/`: the calibration material. `f103v-decipherment.txt`, `f104r-decipherment.txt` are readings of the decipherment made at the time (fr. 15573 ff. 103v–104r), read from the image by Claude; `ref-104r-l18-24.txt` the reference signs of the held-out lines; `stageB/` the three passes and the vote on f. 104r lines 18–24; `scores/` the recorded scores.
